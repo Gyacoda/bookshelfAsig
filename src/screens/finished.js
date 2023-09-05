@@ -1,6 +1,6 @@
 import * as React from 'react'
-import {Link} from 'components/lib'
-import {ListItemList} from 'components/list-item-list'
+import { Link } from 'components/lib'
+import { ListItemList } from 'components/list-item-list'
 
 function FinishedScreen() {
   return (
@@ -8,21 +8,24 @@ function FinishedScreen() {
       filterListItems={li => Boolean(li.finishDate)}
       noListItems={
         <p>
-          Hey there! This is where books will go when you've finished reading
-          them. Get started by heading over to{' '}
-          <Link to="/discover">the Discover page</Link> to add books to your
-          list.
+          Congratulations! This is where you can keep track of the books you've
+          successfully completed. When you finish reading a book, add it to
+          this list to showcase your literary achievements.
+          Get started by exploring the{' '}
+          <Link to="/discover">Discover page</Link> to discover new books to
+          read and add them to your completed list.
         </p>
       }
       noFilteredListItems={
         <p>
-          Looks like you've got some reading to do! Check them out in your{' '}
-          <Link to="/list">reading list</Link> or{' '}
-          <Link to="/discover">discover more</Link>.
+          It looks like you've accomplished quite a bit! Your completed books
+          are right here in your <Link to="/list">reading list</Link>.
+          Feel free to revisit your literary journey or continue exploring new
+          books on the <Link to="/discover">Discover page</Link>.
         </p>
       }
     />
   )
 }
 
-export {FinishedScreen}
+export { FinishedScreen }
