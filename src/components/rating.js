@@ -35,7 +35,7 @@ function Rating({listItem}) {
 
   const rootClassName = `list-item-${listItem.id}`
 
-  const stars = Array.from({length: 7}).map((x, i) => {
+  const stars = Array.from({length: 5}).map((x, i) => {
     const ratingId = `rating-${listItem.id}-${i}`
     const ratingValue = i + 1
     return (
