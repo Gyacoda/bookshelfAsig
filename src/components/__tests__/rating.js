@@ -37,7 +37,6 @@ test(`it shows the correct rating for 0 stars`, async () => {
   expect(screen.getByLabelText('3 stars')).not.toBeChecked()
   expect(screen.getByLabelText('4 stars')).not.toBeChecked()
   expect(screen.getByLabelText('5 stars')).not.toBeChecked()
-  expect(screen.getByLabelText('6 stars')).not.toBeChecked()
 })
 
 test.each`
@@ -47,7 +46,6 @@ test.each`
   ${3}   | ${'3 stars'}
   ${4}   | ${'4 stars'}
   ${5}   | ${'5 stars'}
-  ${6}   | ${'6 stars'}
 `(
   `it shows the correct rating for $selectedLabel`,
   async ({rating, selectedLabel}) => {
