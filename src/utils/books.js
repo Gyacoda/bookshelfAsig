@@ -12,7 +12,7 @@ const loadingBook = {
   loadingBook: true,
 }
 
-const loadingBooks = Array.from({length: 20}, (v, index) => ({
+const loadingBooks = Array.from({length: 30}, (v, index) => ({
   id: `loading-book-${index}`,
   ...loadingBook,
 }))
